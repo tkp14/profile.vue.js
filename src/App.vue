@@ -2,7 +2,6 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <h2>My Profile</h2>
-    
   </div>
 </template>
 

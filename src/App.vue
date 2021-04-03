@@ -1,14 +1,25 @@
 <template>
-  <div id="app">
-    
-    <h2>My Profile</h2>
+  <div>
+    <myheader></myheader>
   </div>
 </template>
 
 <script>
+import myheader from './components/myheader'
+
 export default {
-  name: 'App',
   components: {
+    myheader
+  },
+  data () {
+    return {
+      msg: 'My Profile'
+    }
+  },
+  methods: {
+    clear() {
+      this.msg = ''
+    }
   }
 }
 </script>

@@ -1,6 +1,8 @@
 <template>
-  <div>
+  <div id="app">
     <myheader></myheader>
+    {{ msg }}
+    <button type="button" class="btn btn-primary">Primary</button>
   </div>
 </template>
 

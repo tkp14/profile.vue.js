@@ -6,7 +6,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -55,8 +55,16 @@ export default {
   color: #2c3e50;
 }
 
-.navbar {
-  text-align: center;
+.navbar-brand {
+  padding: 0 30px;
+  margin-right: 0;
+  font-weight: 900;
+  display: inline;
+  font-size: 30px;
 }
 
+ul {
+  padding-right: 30px;
+  font-weight: bold;
+}
 </style>

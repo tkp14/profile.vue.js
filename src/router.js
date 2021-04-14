@@ -3,6 +3,9 @@ import BootstrapVue from 'bootstrap-vue'
 import Router from 'vue-router'
 const Home = () => import("./components/Home.vue")
 const Header = () => import("./components/Header.vue")
+const Profile = () => import("./components/Profile.vue")
+const Portfolio = () => import("./components/Portfolio.vue")
+const Contact = () => import("./components/Contact.vue")
 
 Vue.use(Router);
 Vue.use(BootstrapVue);
@@ -16,13 +19,29 @@ export default new Router({
     {
       path: '/',
       components: {
-        default: Header
+        default: Home,
+        header: Header
       }
     },
     {
-      path: '/home',
+      path: '/profile',
       components: {
-        default: Home
+        default: Profile,
+        header: Header
+      }
+    },
+    {
+      path: '/portfolio',
+      components: {
+        default: Portfolio,
+        header: Header
+      }
+    },
+    {
+      path: '/contact',
+      components: {
+        default: Contact,
+        header: Header
       }
     }
   ]

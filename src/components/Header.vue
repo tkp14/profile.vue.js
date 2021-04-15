@@ -34,8 +34,11 @@ export default {
 </script>
 
 <style scoped>
+nav {
+  padding: 10px 60px;
+}
+
 .navbar-brand {
-  padding: 0 30px;
   margin-right: 0;
   font-weight: 900;
   display: inline;
@@ -43,7 +46,7 @@ export default {
 }
 
 ul {
-  padding-right: 30px;
   font-weight: bold;
+  font-size: 20px;
 }
 </style>

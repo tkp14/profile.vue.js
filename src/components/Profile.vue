@@ -3,9 +3,9 @@
     <router-view name="header"></router-view>
     <h1>プロフィール</h1>
     <div class="container">
-      <div class="row justify-content-sm-center">
+      <div class="row">
         <div class="col-md-6 imgArea"><img :src="src" alt="プロフィール写真">
-        <div class="col-md-10 twitter"><a href="https://twitter.com/takap805014"><font-awesome-icon :icon="['fab', 'twitter']" size="2x" color="#1da1f2"/></a></div>
+          <div class="col-md-10 twitter"><a :href="url"><font-awesome-icon :icon="['fab', 'twitter']" size="2x" color="#1da1f2"/></a></div>
         </div>
         <ul class="col-md-6 profile-outer">
           <li class="col-md-6 profile-inner name">Name</li>
@@ -30,14 +30,14 @@
 export default {
   data () {
     return {
-      src: require('@/assets/imgs/profile.jpg')
+      src: require('@/assets/imgs/profile.jpg'),
+      url: 'https://twitter.com/takap805014'
     }
   }
 }
 </script>
 
 <style scoped>
-
 h1 {
   padding: 50px 0;
   font-weight: bold;
@@ -49,8 +49,8 @@ h1 {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
 }
 

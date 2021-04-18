@@ -5,17 +5,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'home',
-  data() {
-    return{
-
-    }
-  }
-}
-</script>
-
 <style scoped>
   #home {
     background-image: url("../assets/imgs/pexels-kaique-rocha-105238.jpg");

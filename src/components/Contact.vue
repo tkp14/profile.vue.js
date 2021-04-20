@@ -1,6 +1,5 @@
 <template>
   <div id="contact">
-    <router-view name="header"></router-view>
   </div>
 </template>
 

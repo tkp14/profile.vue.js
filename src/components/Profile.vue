@@ -1,6 +1,5 @@
 <template>
   <div id="profile">
-    <router-view name="header"></router-view>
     <h1>プロフィール</h1>
     <div class="container">
       <div class="row">
@@ -46,6 +45,10 @@ h1 {
 
 .twitter {
   padding-top: 20px;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 img {

@@ -73,6 +73,7 @@ img {
 .profile-item {
   padding-bottom: 15px;
   font-size: larger;
+  font-weight: 500;
 }
 
 .name {

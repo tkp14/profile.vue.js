@@ -1,7 +1,11 @@
 <template>
   <div id="home">
-    <h1>Welcome<br>to<br>
-      My Profile <span>by Takahiro Toyama</span></h1>
+    <div class="container">
+      <div class="row">
+          <h1 class="col-md-12">Welcome<br>to<br>
+            My Profile  <span class="col-md-12">by Takahiro Toyama</span></h1>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -26,5 +30,11 @@
 
   span {
     font-size: 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    span {
+
+    }
   }
 </style>

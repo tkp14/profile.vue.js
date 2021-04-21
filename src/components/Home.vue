@@ -13,6 +13,7 @@
     height: 850px;
     font-family: 'Antonio', sans-serif;
     letter-spacing: 5px;
+    animation: none;
   }
 
   h1 {

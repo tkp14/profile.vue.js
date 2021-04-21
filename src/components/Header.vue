@@ -1,32 +1,21 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <b-navbar toggleable="lg" type="dark" variant="dark">
       <router-link to="/" class="navbar-brand">My Profile</router-link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <router-link to="/" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/profile" class="nav-link">Profile</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/contact" class="nav-link">Contact</router-link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="ml-auto">
+          <router-link to="/" class="nav-link">Home <span class="sr-only">(current)</span></router-link>
+          <router-link to="/profile" class="nav-link">Profile</router-link>
+          <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
+          <router-link to="/contact" class="nav-link">Contact</router-link>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
 <script>
-
 
 export default {
 
@@ -34,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
-nav {
+.navbar {
   padding: 10px 60px;
 }
 
@@ -45,7 +34,12 @@ nav {
   font-size: 30px;
 }
 
-ul {
+.nav-link:active {
+  color: #dddddd;
+  opacity: 1;
+}
+
+.navbar-nav {
   font-weight: bold;
   font-size: 20px;
 }

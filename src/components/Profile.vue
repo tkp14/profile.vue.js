@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 imgArea"><img :src="src" alt="プロフィール写真">
-          <div class="col-md-10 twitter"><a :href="url"><font-awesome-icon :icon="['fab', 'twitter']" size="2x" color="#1da1f2"/></a></div>
+          <div class="col-md-12 twitter"><a :href="url"><font-awesome-icon :icon="['fab', 'twitter']" size="2x" color="#1da1f2"/></a></div>
         </div>
         <ul class="col-md-6 profile-outer">
           <li class="col-md-6 profile-inner name">Name</li>
@@ -17,8 +17,8 @@
           <li class="col-md-7 profile-inner hobby">Hobbies</li>
           <li class="col-md-9 profile-item">スポーツ観戦 <br>
              Youtube観賞 <br>
-             ドライブ<br>
-             旅行</li>
+             <span>ドライブ<br>
+              旅行</span></li>
         </ul>
       </div>
     </div>
@@ -37,6 +37,10 @@ export default {
 </script>
 
 <style scoped>
+#profile {
+  animation: none;
+}
+
 h1 {
   padding: 50px 0;
   font-weight: bold;
@@ -80,4 +84,9 @@ img {
   padding-right: 24px;
 }
 
+span {
+  display: inline-block;
+  text-align: start;
+  padding-right: 40px;
+}
 </style>

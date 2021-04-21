@@ -1,4 +1,5 @@
 <template>
+
   <transition
     enter-active-class="animate__animated animate__rubberBand"
     leave-active-class="animate__animated animate__rubberBand"
@@ -35,7 +36,7 @@ export default {
 
 .rubberBand-enter-active,
 .rubberBand-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
 
 .myapp {

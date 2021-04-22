@@ -14,7 +14,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default new Router({
-  mode: "history",
   routes: [
     {
       path: '/',

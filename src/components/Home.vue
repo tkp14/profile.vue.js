@@ -31,10 +31,4 @@
   span {
     font-size: 50px;
   }
-
-  @media screen and (max-width: 480px) {
-    span {
-
-    }
-  }
 </style>
